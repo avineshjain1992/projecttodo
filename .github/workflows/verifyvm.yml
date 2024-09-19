@@ -1,0 +1,19 @@
+name: Verify VMS
+on: workflow_dispatch
+jobs:
+  my-windows-job:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Hello Windows"
+      - run: echo $pwd
+  my-macos-job:
+    runs-on: macos-latest
+    steps:
+      - run: echo "Hello macos"
+      - run: echo $pwd
+  my-ubuntu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello macos"
+      - run: echo $pwd
+      
